@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.banner-topo {
+    text-align: center;
+    margin-top: -30px;
+    font-size: 16px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.btn-entrar {
+    margin-left: 8px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-entrar:hover {
+    background-color: #45a049;
+}
+
+.carrinho-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.botaoInicio{
+    background-color: #f9f6ee;
+    border: none;
+    text-decoration: none;
+    color: #508830;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -100px;
+    font-size: 18px;
+}
+
+main {
+    margin-top: 150px;
+    margin-left: 250px;
+    min-height: 660px;
+}
+
+#mostrarCarrinho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+
+#produtos-mostrar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    margin: 16px;
+    width: 216px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 4px 0;
+    padding: 4px;
+}
+
+.card input {
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card button {
+    background-color: #508830;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover {
+    background-color: #1c581c;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+header {
+    background-color: #f9f6ee;
+    text-align: center;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    width: 220px;
+    height: 220px;
+    margin-left: 12px;
+}
+
+.pesquisa {
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.pesquisa input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pesquisa button {
+    margin: 8px;
+    padding: 10px 20px;
+    background-color: #508830;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #1c581c;
+}
+
+.icones {
+    background-color: #f9f6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 28px;
+    margin-left: 0;
+}
+
+i {
+    font-size: 40px;
+    color: #508830;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+i:hover {
+    color: #1c581c;
+}
+
+nav {
+    background-color: #f9f6ee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    height: 100%;
+    width: 220px;
+}
+
+nav button {
+    background-color: #f9f6ee;
+    border: none;
+    text-decoration: none;
+    color: #508830;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 18px;
+}
+
+nav button:hover {
+    background-color: #f7f0e0;
+    color: #1c581c;
+}
+
+footer {
+    background-color: #f9f6ee;
+    display: flex;
+    margin-left: 200px;
+    padding: 4px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    color: #508830;
+    margin-left: 250px;
+    padding: 0;
+}
+
+.total {
+    position: fixed;
+    top: 650px;
+    right: 28px;
+    z-index: 100;
+    font-size: 22px;
+    color: #508830;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total button {
+    padding: 10px 24px;
+    background: #508830;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.total button:hover {
+    background: #1c581c;
+}
+
+#form-produto {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    background-color: #f9f6ee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.15);
+}
+
+#form-produto input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#form-produto select {
+    width: 96%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#form-produto button {
+    background-color: #508830;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}

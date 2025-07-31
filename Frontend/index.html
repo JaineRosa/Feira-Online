@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Feira-online.png" alt="Feira Online Logo" class="logo">
+
+        <div>
+            <div class="banner-topo">
+                🥕 Produtos fresquinhos direto da roça para a sua mesa!
+            </div>
+            <form class="pesquisa" onsubmit="buscar(event)">
+                <input type="text" id="campoPesquisa" placeholder="Digite o nome do produto">
+                <button type="submit">Buscar</button>
+            </form>
+            <div>
+                <button class="botaoInicio">Início</button>
+                <button class="botaoInicio">Sobre</button>
+                <button class="botaoInicio">Contato</button>
+            </div>
+
+        </div>
+
+        <div class="icones">
+            <div class="carrinho-wrapper" onclick="mostrarCarrinho()">
+                <i class="bi bi-basket2" id="carrinho"></i>
+                <span class="badge" id="carrinho-contador"></span>
+            </div>
+            <i class="bi bi-person-circle" id="perfil"></i>
+            <a href="#" class="btn-entrar">Entrar</a>
+        </div>
+
+    </header>
+
+    <div>
+        <nav>
+            <button onclick="buscarPorCategoria('frutas')">Frutas</button>
+            <button onclick="buscarPorCategoria('legumes')">Legumes</button>
+            <button onclick="buscarPorCategoria('verduras')">Verduras</button>
+            <button onclick="buscarPorCategoria('raizes')">Raízes</button>
+            <button onclick="buscarPorCategoria('temperos')">Temperos</button>
+            <button onclick="mostrarProdutosTodos()">Todos os Produtos</button>
+            <button onclick="cadastrarProduto()">Cadastrar Produtos</button>
+            <button>Cadastrar Categorias</button>
+        </nav>
+    </div>
+
+    <main>
+        <div id="produtos-mostrar"></div>
+        <div id="mostrarCarrinho" style="display: none;"></div>
+        <div id="cadastrarProduto" style="display: none;"></div>
+    </main>
+
+    <footer>
+        <p>Feira Online &copy; 2025</p>
+        <p>Desenvolvido por Jaíne</p>
+        <p>Contato: <a>contato@feiraonline.com</a></p>
+    </footer>
+
+
+
+
+    <script src="produtos.js"></script>
+</body>
+
+</html>
