@@ -248,6 +248,7 @@ function finalizarCompra() {
 function cadastrarProduto() {
     console.log('Função cadastrarProduto chamada');
     mostrarProdutosDiv.style.display = 'none';
+    mostrarCarrinhoDiv.style.display = 'none';
     cadastrarProdutoDiv.style.display = 'flex';
 
     cadastrarProdutoDiv.innerHTML = `
